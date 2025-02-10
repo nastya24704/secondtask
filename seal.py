@@ -1,6 +1,7 @@
 import turtle
 turtle.speed(15)
 turtle.shape('turtle')
+
 def middle_trianle(x, y,z, length, color_line, color_filling):
     turtle.up()
     turtle.goto(x, y)
@@ -31,21 +32,6 @@ def square(x,y,z,length,color_line,color_filling):
     turtle.end_fill()
     turtle.right(45)
 
-def big_trianle(x,y,z,length,color_line,color_filling):
-    turtle.up()
-    turtle.goto(x,y)
-    turtle.seth(z)
-    turtle.down()
-    turtle.color(color_line,color_filling)
-    turtle.begin_fill()
-    turtle.forward(length)
-    turtle.left(135)
-    turtle.forward((length**2/2)**0.5)
-    turtle.left(90)
-    turtle.forward((length**2/2)**0.5)
-    turtle.right(135)
-    turtle.end_fill()
-
 def parallelogramm_2(x, y, z, length, color_line, color_filling):
     turtle.up()
     turtle.goto(x, y)
@@ -69,6 +55,7 @@ def seal(k,l):
     middle_trianle(k + 105, l - 158, 105, 60 * 2 ** 0.5, "white", "springgreen")
     middle_trianle(k + 188, l - 136, 150, 60 * 2 ** 0.5, "white", "deepskyblue")
     middle_trianle(k+211, l-100, 194, 60/2**0.5, "white", "mediumslateblue")
+
 seal(-200,200)
 turtle.exitonclick()
 turtle.done()
