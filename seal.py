@@ -48,13 +48,13 @@ def parallelogramm_2(x, y, z, length, color_line, color_filling):
     turtle.end_fill()
 
 def seal(k,l):
-    middle_trianle(k, l, -30, 60, "white", "aquamarine")
-    square(k+14.7, l-58.3, -30, 60/(2**0.5), "white", "aqua")
-    middle_trianle(k+14, l-59, -75, 60/2**0.5, "white", "mediumslateblue")
-    parallelogramm_2(k+14, l-61, -120, 57, "white", "lightskyblue")
-    middle_trianle(k + 105, l - 158, 105, 60 * 2 ** 0.5, "white", "springgreen")
-    middle_trianle(k + 188, l - 136, 150, 60 * 2 ** 0.5, "white", "deepskyblue")
-    middle_trianle(k+211, l-100, 194, 60/2**0.5, "white", "mediumslateblue")
+    middle_trianle(k, l, -30, 40, "white", "aquamarine")
+    square(k+9, l-39, -30, 40/(2**0.5), "white", "aqua")
+    middle_trianle(k+8, l-40, -75, 40/2**0.5, "white", "mediumslateblue")
+    parallelogramm_2(k+7, l-43, -120, 57/1.5, "white", "lightskyblue")
+    middle_trianle(k + 69, l - 107, 105, 40 * 2 ** 0.5, "white", "springgreen")
+    middle_trianle(k + 124.5, l - 92, 150, 40 * 2 ** 0.5, "white", "deepskyblue")
+    middle_trianle(k+140, l-67, 194, 40/2**0.5, "white", "mediumslateblue")
 
 seal(-200,200)
 turtle.exitonclick()
