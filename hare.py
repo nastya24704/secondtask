@@ -63,13 +63,13 @@ def parallelogramm_2(x, y, z, length, color_line, color_filling):
     turtle.end_fill()
 
 def hare(k,l):
-    middle_trianle(k, l, 90, 60, "white", "salmon")
-    parallelogramm_2(k+1, l, 10, 60, "white", "darkred")
-    square(k+1, l-1, -90, 40, "white", "sienna")
-    middle_trianle(k, l-155, 90, 100, "white", "tomato")
-    big_trianle(k+41, l-198, 135, 160, "white", "sandybrown")
-    big_trianle(k, l - 40, -90, 60, "white", "orange")
-    middle_trianle(k+31, l-131, 90, 60/2**0.5, "white", "goldenrod")
+    middle_trianle(k, l, 90, 40, "white", "salmon")
+    parallelogramm_2(k + 1, l, 10, 40, "white", "darkred")
+    square(k + 1, l -0.5, -90, 40 / 1.5, "white", "sienna")
+    big_trianle(k, l - 26, -90, 40, "white", "orange")
+    middle_trianle(k + 21, l - 86, 90, 40 / 2 ** 0.5, "white", "goldenrod")
+    middle_trianle(k, l - 86, 90, 80 / 1.5, "white", "tomato")
+    big_trianle(k + 22, l - 108.5, 135, 130 / 1.5, "white", "sandybrown")
   
 hare(-200,200)
 turtle.exitonclick()
